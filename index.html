@@ -1,0 +1,180 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <title>we love lit-email-template</title>
+
+    <style type="text/css">
+        body{
+            margin:0;
+            padding:0;
+            font-family:'Roboto',sans-serif;
+        }
+        h1,h2,h3,h4,h5,h6,a,p{
+            margin:0;
+            padding:0;
+            font-family:'Roboto',sans-serif;
+        }
+        td.main-content{
+            box-shadow:inset 0 0 10px 10px #ddd;
+        }
+        td.social-icons a img{
+            padding:0 5px;
+            width:40px;
+        }
+        table.sub-container{
+            width:93%;
+        }
+        td.gap{
+            display:none;
+        }
+        {% if email_main_body_box_shadow_css and email_main_body_box_shadow_css != '' %}
+            #main_body {
+                box-shadow: {{ email_main_body_box_shadow_css }};
+            }
+            {% endif %} 
+        @media screen and (max-width:640px){
+            table.container{
+                width:480px !important;
+            }
+
+        }	@media screen and (max-width:640px){
+            table.small-container{
+                width:100% !important;
+                text-align:center !important;
+            }
+
+        }	@media screen and (max-width:640px){
+            td.logo{
+                text-align:center !important;
+            }
+
+        }	@media screen and (max-width:640px){
+            td.social-icons{
+                text-align:center !important;
+            }
+
+        }	@media screen and (max-width:640px){
+            td.gap{
+                display:block !important;
+            }
+
+        }	@media screen and (max-width:640px){
+            table.sub-container2{
+                width:100% !important;
+            }
+
+        }	@media screen and (max-width:640px){
+            td.big-footer{
+                padding:0 10px !important;
+            }
+
+        }	@media screen and (max-width:510px){
+            table.container{
+                width:90% !important;
+            }
+
+        }	@media screen and (max-width:400px){
+            table.container{
+                width:90% !important;
+            }
+
+        }</style>
+        
+    </head>
+<body>
+<table width="100%" border="0" cellpadding="0" cellspacing="0" bgcolor="{{ background_color }}" style="background-color: #fff; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">
+    <tr>
+        <td align="center">
+            <table class="container" width="640" border="0" bgcolor="{{ background_color }}" style="background-color: #fff;" cellpadding="0" cellspacing="0">
+                <tr>
+                    <td height="20"></td>
+                </tr>
+                <tr>
+                    <td align="center" valign="top">
+                        <div class="widget-span widget-type-logo " id="main_body" style="" data-widget-type="logo">
+                            <div class="layout-widget-wrapper">
+                             <!--  {% logo "logo_image" suppress_company_name=True, overrideable=True, label="Logo" %}-->
+                             <a href="https://welovelit.org/">
+                                <img src="https://raw.githubusercontent.com/ShahjalalK/starkypaulino-email-template/master/img/logo2.png" alt="" width="100%" style="text-align: center; ">
+                            </div><!--end layout-widget-wrapper -->
+                        </div><!--end widget-span -->
+                        
+                    </td>
+                </tr>
+            </table>
+            <table class="container" width="640" border="0" cellpadding="0" cellspacing="0" bgcolor="{{ background_color }}" style="background-color: #fff;" bgcolor="#fff">
+                <tr>
+                    <td align="center">
+                        <table class="sub-container" border="0" cellpadding="0" cellspacing="0">
+                            <tr>
+                                <td height="30"></td>
+                            </tr>
+                            <tr>
+                                <td align="left" style="font-size: 11pt; color: {{ primary_font_color }};" valign="top">
+                                    <div class="widget-span widget-type-email_body " data-widget-type="email_body">
+                                       <!-- {% content_attribute "email_body" %}-->
+                                        <p style="color: #00b0f0;">4/24/2023</p>
+                                        <p>&nbsp;</p>
+                                        <p>Dear Friends and Colleagues:</p>
+                                        <p>&nbsp;</p>
+                                        <p style="line-height: 170%;">I am writing with deep gratitude for all your thoughtful and generous donations to We Love Lit, most recently for (<span style="color: #00b0f0;">celebrating my milestone 50th Birthday</span>).  My team and I are deeply touched by your kind messages, donations of <span style="color: #00b0f0;">XX</span>, and donation of books, all of which will help to advance our cause of improving literacy within our community. </p>
+                                        <p>&nbsp;</p>
+                                        <p style="line-height: 170%;">As you are all aware, we are passionate about building literacy pathways for children and families.  Our mission is to collaborate with organizations like yours, so that reading can be  integrated and embraced at any moment! It has always been my vision to do whatever I can to help locally and nationally, the children that mean so much to me.  But I cannot achieve this goal alone. Your support helps to make our collective vision more of a reality, and paves the way for our children to learn, read and write, and live their best life.  Your legacies will be the positive impact that you make on these children, through your donations.</p>
+                                        <p>&nbsp;</p>
+                                        <p style="line-height: 170%;">I wish you all continued health and success this year,  and look forward to partnering with you again in the future. <span style="color: #00b0f0;">Thank you again for making this birthday more meaningful!</span></p>
+                                        <p>&nbsp;</p>
+                                        <p>&nbsp;</p>
+                                        <p style="line-height: 170%;">Warm Regards,</p>
+                                        <p style="line-height: 170%;">Dr. Ashelin Currie</p>
+                                        <p>&nbsp;</p>
+                                        <p>&nbsp;</p>
+                                        <p style="line-height: 170%;">*For your records: </p>                                   
+                                    <p style="font-size: 10.5pt; line-height: 130%; font-style: italic;">We Love Lit! is a tax-exempt organization as described in Section 501(c)(3) of the United States Internal
+                                        Revenue Code. Donations to We Love Lit! are tax deductible to the extent allowed by law, and no goods or
+                                        services have been or will be exchanged in consideration of this gift. Our tax ID number is 85-3293055</p>
+                                       <!-- {% end_content_attribute %}-->
+                                    </div>
+                                </td>
+                            </tr>
+                           
+                            <tr>
+                                <td height="20"></td>
+                            </tr>
+                           
+                           
+                            
+                        </table>
+                    </td>
+                </tr>
+            </table>
+           
+            <table class="container" width="640" border="0" cellpadding="0" cellspacing="0" bgcolor="{{ background_color }}" style="color: #fff; background-color: #fff;">
+                <tr>
+                    <td height="20"></td>
+                </tr>
+                <tr>
+                    <td align="center" style="font-size:14px; text-align: center;" valign="top">
+                        
+                        <p id="footer" style="padding-bottom: 10px; color: #000;">
+                      <!--  {{ subscription_name }} &nbsp;
+                        {{ site_settings.company_name }}&nbsp;
+                        {{ site_settings.company_street_address_1 }}&nbsp;
+                        {{ site_settings.company_street_address_2 }}&nbsp;
+                        {{ site_settings.company_city }}&nbsp;
+                        {{ site_settings.company_state }}&nbsp;
+                        {{ site_settings.company_zip }}&nbsp;
+                        {{ site_settings.company_country }}&nbsp;      -->              
+                    </p>                                             
+                        <a class="hubspot-mergetag" data-unsubscribe="true" href="{{ unsubscribe_link_all }}" style="text-decoration: underline; color: #0072b1;">Unsubscribe Manage preferences</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td height="20"></td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+</table>
+</body>
+</html>
